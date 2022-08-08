@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-04T05:03:19.845Z",
+    "end": "2022-08-04T05:03:31.750Z",
+    "duration": 11905,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "28f13db3-4cef-40c0-94cb-8fdd3ad0e2eb",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\Test8.js",
+      "file": "cypress\\integration\\examples\\Test8.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "62e26ab1-6578-4c83-af30-2fa656a4a6c7",
+          "title": "My Eighth Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "My Eighth Test Case",
+              "fullTitle": "My Eighth Test Suite My Eighth Test Case",
+              "timedOut": null,
+              "duration": 9813,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('url') + '/AutomationPractice/');\ncy.frameLoaded('#courses-iframe');\ncy.iframe().find(\"a[href*='mentorship']\").eq(0).click();\ncy.wait(2000);\ncy.iframe().find(\"h1[class*='pricing-title']\").should('have.length', 2);",
+              "err": {},
+              "uuid": "86b32cdf-c640-4c04-8458-f5a5c640924e",
+              "parentUUID": "62e26ab1-6578-4c83-af30-2fa656a4a6c7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "86b32cdf-c640-4c04-8458-f5a5c640924e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9813,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
