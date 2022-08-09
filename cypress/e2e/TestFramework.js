@@ -63,7 +63,7 @@ describe("My Framework Test Suite", function () {
         //or
         productPage.getPurchaseSuccessMsg().then(function (element) {
             const successMsg = element.text()
-            expect(successMsg.includes(data.purchaseSuccessMsg)).to.false
+            expect(successMsg.includes(data.purchaseSuccessMsg)).to.true
         })
 
     })

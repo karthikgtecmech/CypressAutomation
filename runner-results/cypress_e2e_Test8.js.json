@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 1,
+  "passes": 1,
+  "pending": 0,
+  "failures": 0,
+  "start": "2022-08-09T06:40:36.156Z",
+  "duration": 9531,
+  "file": "cypress\\e2e\\Test8.js"
+}

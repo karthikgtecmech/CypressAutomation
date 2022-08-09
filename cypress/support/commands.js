@@ -14,11 +14,16 @@
 // Cypress.Commands.add('login', (email, password) => { ... })
 //This command is to select the product
 Cypress.Commands.add("selectProduct", (productName) => {
-    cy.get('h4.card-title').each(($el, index, $list)=>{
-        if($el.text().includes(productName)){
+    cy.get('h4.card-title').each(($el, index, $list) => {
+        if ($el.text().includes(productName)) {
             cy.get('button.btn.btn-info').eq(index).click()
         }
     })
+})
+
+//to fetch data from xlsx
+Cypress.Commands.add('parseXlsx', (inputFile) => {
+    return cy.task('parseXlsx', { filePath: inputFile })
 })
 
 // -- This is a child command --
