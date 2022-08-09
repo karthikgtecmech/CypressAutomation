@@ -2,19 +2,30 @@ module.exports = {
   projectId: 'a6byq7',
   defaultCommandTimeout: 8000,
   pageLoadTimeout: 10000,
-  reporter: 'mochawesome',
   video: true,
+  //reporter: "mochawesome"
+
+  //for cypress-mochawesome-reporter -- html report with screenshots
+  reporter: "cypress-mochawesome-reporter",
+  reporterOptions: {
+    reportDir: "cypress/reports",
+    charts: true,
+    reportPageTitle: "My Test Suite",
+    embeddedScreenshots: true,
+    inlineAssets: true
+  },
+
   env: {
     url: 'https://rahulshettyacademy.com'
   },
   retries: {
     runMode: 0,
-    openMode: 1
+    openMode: 0
   },
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      require('cypress-mochawesome-reporter/plugin')(on);
     },
-    specPattern: 'cypress/integration/examples/*.js'
+    specPattern: 'cypress/e2e/*.js'
   },
 };
