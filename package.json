@@ -6,9 +6,10 @@
   "scripts": {
     "test": "node_modules\\.bin\\cypress run",
     "headTest": "npm run test -- --headed",
-    "recordDashboardTest": "npm run test -- --record --key b9cda9e5-5249-4397-acac-1a505267246a --reporter mochawesome",
+    "recordDashboardTest": "npm run test -- --record --key b9cda9e5-5249-4397-acac-1a505267246a --reporter cypress-mochawesome-reporter",
     "cy:run": "cypress run",
-    "cy:parallel": "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js -a '\"--headed\"'"
+    "cy:parallel": "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js -a '\"--headed\"'",
+    "cy:parallel-report": "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js -a '\"--reporter cypress-mochawesome-reporter\"'"
   },
   "author": "",
   "license": "ISC",
