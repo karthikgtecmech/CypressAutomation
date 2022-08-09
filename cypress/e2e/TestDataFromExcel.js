@@ -17,7 +17,6 @@ describe("Get Data from Excel sheet", function () {
 
         const loginPage = new LoginPage()
         const dashboardPage = new DashboardPage()
-
         cy.visit('https://demo.actitime.com/')
         loginPage.getUserNameTextField().type(username)
         loginPage.getPasswordTextField().type(password)
