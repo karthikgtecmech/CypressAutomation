@@ -8,8 +8,7 @@
     "headTest": "npm run test -- --headed",
     "recordDashboardTest": "npm run test -- --record --key b9cda9e5-5249-4397-acac-1a505267246a --reporter cypress-mochawesome-reporter",
     "cy:run": "cypress run",
-    "cy:parallel": "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js -a '\"--headed\"'",
-    "cy:parallel-report": "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js -a '\"--reporter cypress-mochawesome-reporter\"'"
+    "cy:parallel": "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js -a '\"--headed\"'"
   },
   "author": "",
   "license": "ISC",
