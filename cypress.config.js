@@ -7,17 +7,17 @@ module.exports = {
   defaultCommandTimeout: 8000,
   pageLoadTimeout: 10000,
   video: false,
-  //reporter: "mochawesome"
+  reporter: "mochawesome",
 
   //for cypress-mochawesome-reporter -- html report with screenshots
-  reporter: "cypress-mochawesome-reporter",
-  reporterOptions: {
-    reportDir: "cypress/reports",
-    charts: true,
-    reportPageTitle: "My Test Suite",
-    embeddedScreenshots: true,
-    inlineAssets: true
-  },
+  // reporter: "cypress-mochawesome-reporter",
+  // reporterOptions: {
+  //   reportDir: "cypress/reports",
+  //   charts: true,
+  //   reportPageTitle: "My Test Suite",
+  //   embeddedScreenshots: true,
+  //   inlineAssets: true
+  // },
 
   env: {
     url: 'https://rahulshettyacademy.com'
