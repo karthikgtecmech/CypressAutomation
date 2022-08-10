@@ -6,8 +6,7 @@ module.exports = {
   projectId: 'a6byq7',
   defaultCommandTimeout: 8000,
   pageLoadTimeout: 10000,
-  video: true,
-
+  video: false,
   //reporter: "mochawesome"
 
   //for cypress-mochawesome-reporter -- html report with screenshots
