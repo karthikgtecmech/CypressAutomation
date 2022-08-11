@@ -9,12 +9,14 @@
     "frameworkTest": "npm run test -- --spec cypress\\e2e\\TestFramework.js",
     "recordDashboardTest": "npm run test -- --record --key b9cda9e5-5249-4397-acac-1a505267246a --reporter cypress-mochawesome-reporter",
     "cy:run": "cypress run",
-    "cy:parallel": "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js -a '\"--headed\"'"
+    "cy:parallelHeaded": "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js -a '\"--headed\"'",
+    "cy:parallel": "cypress-parallel -s cy:run -t 2 -d cypress\\e2e\\*.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^10.4.0",
+    "cypress-grep": "^3.0.2",
     "cypress-iframe": "^1.0.1",
     "cypress-mochawesome-reporter": "^3.2.0",
     "cypress-parallel": "^0.9.1",

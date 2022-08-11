@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 0,
-  "start": "2022-08-10T11:30:53.108Z",
-  "duration": 8264,
+  "start": "2022-08-11T09:24:14.707Z",
+  "duration": 14448,
   "file": "cypress\\e2e\\Test2.js"
 }

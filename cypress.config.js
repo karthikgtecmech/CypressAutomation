@@ -7,9 +7,9 @@ module.exports = {
   defaultCommandTimeout: 8000,
   pageLoadTimeout: 10000,
   video: false,
- // reporter: "mochawesome",
+  // reporter: "mochawesome",
 
- // for cypress-mochawesome-reporter -- html report with screenshots
+  // for cypress-mochawesome-reporter -- html report with screenshots
   reporter: "cypress-mochawesome-reporter",
   reporterOptions: {
     reportDir: "cypress/reports",
@@ -28,7 +28,11 @@ module.exports = {
   },
   e2e: {
     setupNodeEvents(on, config) {
+      //for mochawesme report with screenshots
       require('cypress-mochawesome-reporter/plugin')(on);
+
+      //for tags to segregate smoke/regression
+      require('cypress-grep/src/plugin')(config);
 
       //to fetch data from xlsx
       on('task', {

@@ -19,6 +19,8 @@ import './commands'
 //for mochawesore report with screenshots
 import 'cypress-mochawesome-reporter/register';
 
+//for tags to segregate smoke/regression
+require('cypress-grep')()
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
