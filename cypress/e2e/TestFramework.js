@@ -48,7 +48,6 @@ describe("My Framework Test Suite", function () {
         })
 
         // cy.pause()
-
         productPage.getCheckOutProduct().click()
         productPage.getDeliveryLocationTextBox().type(data.country)
         Cypress.config('defaultCommandTimeout', 10000)
