@@ -1,0 +1,128 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-16T07:39:12.138Z",
+    "end": "2022-08-16T07:39:25.013Z",
+    "duration": 12875,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4e861bc2-7f86-4ae6-9319-bbefc50feba6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Test8.js",
+      "file": "cypress\\e2e\\Test8.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e7e202f3-7e0d-4ece-aba9-8e80f0e88890",
+          "title": "My Eighth Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "My Seventh Test Case",
+              "fullTitle": "My Eighth Test Suite My Seventh Test Case",
+              "timedOut": null,
+              "duration": 5329,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('url') + '/AutomationPractice/');\ncy.contains('Top').click({\n  force: true\n});\ncy.url().should('include', 'top');",
+              "err": {},
+              "uuid": "da25fe8c-e764-4d6d-90a4-0f8587d84393",
+              "parentUUID": "e7e202f3-7e0d-4ece-aba9-8e80f0e88890",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "My Eighth Test Case",
+              "fullTitle": "My Eighth Test Suite My Eighth Test Case",
+              "timedOut": null,
+              "duration": 5438,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('url') + '/AutomationPractice/');\ncy.frameLoaded('#courses-iframe');\ncy.iframe().find(\"a[href*='mentorship']\").eq(0).click();\ncy.wait(2000);\ncy.iframe().find(\"h1[class*='pricing-title']\").should('have.length', 2);",
+              "err": {},
+              "uuid": "545b8146-4471-4497-b413-36a04173f3de",
+              "parentUUID": "e7e202f3-7e0d-4ece-aba9-8e80f0e88890",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "da25fe8c-e764-4d6d-90a4-0f8587d84393",
+            "545b8146-4471-4497-b413-36a04173f3de"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10767,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

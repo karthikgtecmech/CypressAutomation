@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-16T07:38:30.457Z",
+    "end": "2022-08-16T07:38:44.152Z",
+    "duration": 13695,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e1e15eb4-91e8-407b-a38d-bbc699008cfc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Test5.js",
+      "file": "cypress\\e2e\\Test5.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2f1938c1-1797-4594-8e55-9058675417e9",
+          "title": "My Fifth Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "My Fifth Test Case",
+              "fullTitle": "My Fifth Test Suite My Fifth Test Case",
+              "timedOut": null,
+              "duration": 10440,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('url') + '/AutomationPractice/');\ncy.wait(5000);\ncy.log(cy.get('tr td:nth-child(2)').its('length'));\ncy.get('tr td:nth-child(2)').each(($el, index, $list) => {\n  if ($el.text().includes('Python')) {\n    cy.get('tr td:nth-child(2)').eq(index).next().then(function (price) {\n      const priceText = price.text();\n      expect(priceText).to.equal('25');\n    });\n  }\n});",
+              "err": {},
+              "uuid": "28a4afc5-417e-465a-ba9f-cc2a3ed14d77",
+              "parentUUID": "2f1938c1-1797-4594-8e55-9058675417e9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "28a4afc5-417e-465a-ba9f-cc2a3ed14d77"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10440,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
